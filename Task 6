@@ -1,0 +1,17 @@
+function findVowels(str) 
+{
+  count = 0
+  const vow = ['a', 'e', 'i', 'o', 'u']
+  for(char of str.toLowerCase()) 
+  {
+    if(vow.includes(char)) 
+    {
+      count++
+    }
+  }
+  console.log(count)
+  return count
+}
+
+findVowels('why')
+findVowels('hello')
